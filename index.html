@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/assets/css/styles.css">
+    <title>APIs</title>
+</head>
+<body>
+    <div class="name">Nombre del usuario</div> 
+    <p class="blog"></p>
+    <p class="location"></p> <!-- Se agrega esta linea para complementar el JS -->
+
+    <script src="./public/assets/js/app.js"></script> 
+</body>
+</html>
+
+<!-- *Se intala los nodes_modules y se organiza en estructura el proyecto, asi mismo para poder ejecutar en nmp run dev 
+*Se agrega server.js por que al querer abrir npm run dev
+*Se agrega en hmtl Location 
+*No se toca css
+Explicando que se hizo en JS
+*En el original bloque de código, se seleccionan elementos del DOM utilizando el método document.querySelector(), pero con 
+selectores diferentes ('name', '#blog', y '.location').
+*En el Arreglo Abraham bloque de código, se seleccionan elementos del DOM utilizando clases ('.name', '.blog', y '.location').
+Manejo de errores:
+*En el original bloque de código, la función handleError() simplemente imprime el error en la consola y trata de actualizar el 
+contenido del elemento $n con un mensaje de error.
+*En el Arreglo Abraham de código, se usa un enfoque más robusto para manejar errores. Se utiliza un bloque try...catch dentro de la 
+función displayUser() para capturar cualquier error que pueda ocurrir durante la solicitud de la API o el procesamiento de la respuesta. 
+Además, se verifica si el elemento $n existe antes de intentar actualizar su contenido con un mensaje de error. Si el elemento $n no se 
+encuentra, el error se imprime en la consola.
+Control de flujo:
+*En el original bloquede código, no hay verificación de si los elementos del DOM están disponibles antes de llamar a la función displayUser().
+*En el Arreglo Abraham de código, se agrega una verificación para asegurarse de que los elementos del DOM estén disponibles antes de llamar a la función displayUser().
+Gestión de la respuesta de la API:
+*En el original bloque de código, no se verifica si la respuesta de la API es exitosa antes de intentar leer los datos de la respuesta. Además, 
+el objeto data no está definido en la consola.log.
+*En el Arreglo Abraham de código, se utiliza response.ok para verificar si la solicitud fue exitosa antes de procesar los datos de la respuesta. 
+Además, se captura cualquier error que ocurra durante la solicitud de la API o el procesamiento de la respuesta. -->
